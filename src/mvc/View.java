@@ -183,7 +183,7 @@ public class View extends javax.swing.JFrame {
             double result = this.myRelatedController.calculate("-", a, b);
             this.jTextField3.setText("" + result);
         } else {
-            this.jTextField3.setText("Invalid Operation " );
+            this.jTextField3.setText("Invalid Operation $$" );
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -195,7 +195,7 @@ public class View extends javax.swing.JFrame {
             double result = this.myRelatedController.calculate("*", a, b);
             this.jTextField3.setText("" + result);
         } else {
-            this.jTextField3.setText("Invalid Operation " );
+            this.jTextField3.setText("Invalid Operation $$" );
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
