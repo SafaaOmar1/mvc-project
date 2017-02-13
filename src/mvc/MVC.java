@@ -18,6 +18,8 @@ public class MVC {
         // TODO code application logic here
       // View v  =new View(new Controller ());
         //v.setVisible(true);
+        
+        /// is this nice comment !
     }
     
 }
