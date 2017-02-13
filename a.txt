@@ -5,3 +5,6 @@ added from server
 git pull teset
 
 test conflict local server
+
+
+test netbeans git ... 
