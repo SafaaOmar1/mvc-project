@@ -44,7 +44,7 @@ public class ModelTest {
     @Test
     public void testValidate_String() {
         System.out.println("validate");
-        String exp = "";
+        String exp = " ";
         Model instance = new Model();
         boolean expResult = false;
         boolean result = instance.validate(exp);
@@ -81,15 +81,19 @@ public class ModelTest {
     @Test
     public void testCalc_3args() {
         System.out.println("Calc");
-        double p1 = 0.0;
-        double p2 = 0.0;
-        String op = "";
+        double p1 = 7.0;
+        double p2 = 4.0;
+        String op = "-";
         Model instance = new Model();
-        double expResult = 0.0;
+        double expResult = 3.0;
         double result = instance.Calc(p1, p2, op);
         assertEquals(expResult, result, 0.0);
+        
+         expResult = 12.0;
+        result = instance.Calc(4,3,"*");//, s)
+        assertEquals(expResult, result,0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -98,15 +102,17 @@ public class ModelTest {
     @Test
     public void testValidate_3args() {
         System.out.println("validate");
-        String op = "";
-        double p1 = 0.0;
+        String op = "/";
+        double p1 = 2.0;
         double p2 = 0.0;
         Model instance = new Model();
         boolean expResult = false;
         boolean result = instance.validate(op, p1, p2);
         assertEquals(expResult, result);
+        
+    
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
     
 }
