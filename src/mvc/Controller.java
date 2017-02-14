@@ -26,7 +26,9 @@ public class Controller {
     }
 
     public boolean validate(String operation, double p1, double p2) {
+        
         return this.model.validate(operation, p1, p2);
+        
     }
 
     public double calculate(String operation, double p1, double p2) {

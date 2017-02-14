@@ -5,6 +5,8 @@
  */
 package mvc;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author safaa
@@ -184,6 +186,7 @@ public class View extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        try{
           double a = Double.parseDouble(jTextField1.getText());
         double b = Double.parseDouble(jTextField2.getText());
         if (this.myRelatedController.validate("*", a, b)) {
@@ -193,13 +196,17 @@ public class View extends javax.swing.JFrame {
             this.jTextField3.setText("Invalid Operation $$" );
         }
     }//GEN-LAST:event_jButton3ActionPerformed
-
+catch(Exception e){
+     System.out.print("enter a value here ");
+}}
+        
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        try{
                double a = Double.parseDouble(jTextField1.getText());
         double b = Double.parseDouble(jTextField2.getText());
         if (this.myRelatedController.validate("/", a, b)) {
@@ -207,6 +214,10 @@ public class View extends javax.swing.JFrame {
             this.jTextField3.setText("" + result);
         } else {
             this.jTextField3.setText("Invalid Operation " );
+        }
+        }
+        catch(Exception e){
+           System.out.print("enter a value in each fieled ");
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
